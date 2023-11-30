@@ -48,7 +48,7 @@ if st.session_state.clicked:
     st.write('Button clicked!')
     st.slider('Select a value')
     
-    
+"""    
 # Toggle button    
 if 'button' not in st.session_state:
     st.session_state.button = False
@@ -64,3 +64,5 @@ if st.session_state.button:
     st.slider('Select a value')
 else:
     st.write('Button is off!')
+    
+"""
