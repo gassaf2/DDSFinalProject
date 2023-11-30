@@ -48,28 +48,4 @@ if st.session_state.clicked:
     st.write('Button clicked!')
     st.slider('Select a value')
    
-with st.sidebar:
-    with st.echo():
-        st.write("This code will be printed to the sidebar.")
 
-    with st.spinner("Loading..."):
-        time.sleep(5)
-    st.success("Done!")   
-"""    
-# Toggle button    
-if 'button' not in st.session_state:
-    st.session_state.button = False
-
-def click_button():
-    st.session_state.button = not st.session_state.button
-
-st.button('Click me', on_click=click_button)
-
-if st.session_state.button:
-    # The message and nested widget will remain on the page
-    st.write('Button is on!')
-    st.slider('Select a value')
-else:
-    st.write('Button is off!')
-    
-"""
