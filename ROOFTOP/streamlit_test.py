@@ -21,7 +21,7 @@ our_to_filter = st.slider('hour', 0, 23, 17)  # min: 0h, max: 23h, default: 17h
 
 if st.checkbox('Parameters of model'):
     st.subheader('Raw data')
-    st.write("test test test test test test \test test test test test)
+    st.write("test test test test test test \n test test test test test")
     
     
     
