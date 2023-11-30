@@ -1,4 +1,4 @@
 .ipynb_checkpoints/
-ROOFTOP/train_maks/*
-ROOFTOP/train/*
-ROOFTOP/AerialImageDataset/*
+ROOFTOP/train_masks/
+ROOFTOP/train/
+ROOFTOP/AerialImageDataset/
