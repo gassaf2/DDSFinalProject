@@ -19,7 +19,7 @@ with st.sidebar:
     )
 
 tab1, tab2, tab3 = st.tabs(["Cat", "Dog", "Owl"])
-
+uploaded_file = st.file_uploader("Choose an image...", type="jpg, jpeg, tiff")
 with tab1:
    st.header("A cat")
    st.image("https://static.streamlit.io/examples/cat.jpg", width=200)
