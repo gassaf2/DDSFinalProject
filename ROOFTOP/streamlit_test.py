@@ -3,7 +3,14 @@ import pandas as pd
 import numpy as np
 
 
-st.title('Roof Top Detection')
+import streamlit as st
+
+st.header('Roof Top Detection', divider='blue',help='This is an application where user can drop an image and the system will detect the roof top  using deep learning model')
+st.header('Deep Learning application is :blue[cool] :sunglasses:')
+
+st.caption(' Introduction: The usage of this application is free of cost')
+
+
 
 # Using object notation
 add_selectbox = st.sidebar.selectbox(
