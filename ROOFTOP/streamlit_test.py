@@ -10,12 +10,16 @@ st.header('Deep Learning application is :blue[cool] :sunglasses:')
 
 st.caption(' Introduction: The usage of this application is free of cost')
 
-
+"""
 code = '''def hello():
     print("Hello, Streamlit!")'''
 st.code(code, language='python')
-
-
+"""
+uploaded_files = st.file_uploader("Choose a CSV file", accept_multiple_files=True)
+for uploaded_file in uploaded_files:
+    bytes_data = uploaded_file.read()
+    st.write("filename:", uploaded_file.name)
+    st.write(bytes_data)
 # Using object notation
 add_selectbox = st.sidebar.selectbox(
     "How would you like to be contacted?",
