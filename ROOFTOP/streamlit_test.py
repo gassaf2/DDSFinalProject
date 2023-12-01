@@ -11,6 +11,10 @@ st.header('Deep Learning application is :blue[cool] :sunglasses:')
 st.caption(' Introduction: The usage of this application is free of cost')
 
 
+code = '''def hello():
+    print("Hello, Streamlit!")'''
+st.code(code, language='python')
+
 
 # Using object notation
 add_selectbox = st.sidebar.selectbox(
