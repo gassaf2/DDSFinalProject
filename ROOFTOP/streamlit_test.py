@@ -24,7 +24,6 @@ if uploaded_file is not None:
     # To convert to a string based IO:
     stringio = StringIO(uploaded_file.getvalue().decode("utf-8"))
     st.write(stringio)
-	st.caption("AAAAA")
     # To read file as string:
     string_data = stringio.read()
     st.write(string_data)
