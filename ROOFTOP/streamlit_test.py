@@ -34,7 +34,7 @@ if uploaded_file is not None:
     st.write(dataframe)
     
     
-img='test_streamlit/austin1__tile_0_0.png'   
+img='/test_streamlit/austin1__tile_0_0.png'   
 st.image(img, caption='Sunrise by the mountains')    
     
     
