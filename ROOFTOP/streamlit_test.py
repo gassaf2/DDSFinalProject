@@ -33,7 +33,7 @@ if uploaded_file is not None:
     dataframe = pd.read_csv(uploaded_file)
     st.write(dataframe)
 
-static_folder_path = "test_streamlit"
+static_folder_path = "ROOFTOP/test_streamlit"
 # Get the image file path within the static folder
 image_filename = "austin1__tile_0_0.png"
 image_path = f"{static_folder_path}/{image_filename}"
