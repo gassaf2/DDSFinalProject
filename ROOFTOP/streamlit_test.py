@@ -32,6 +32,13 @@ if uploaded_file is not None:
     # Can be used wherever a "file-like" object is accepted:
     dataframe = pd.read_csv(uploaded_file)
     st.write(dataframe)
+    
+    
+img='test_streamlit/austin1__tile_0_0.png'   
+st.image(img, caption='Sunrise by the mountains')    
+    
+    
+    
 add_selectbox = st.sidebar.selectbox(
     "How would you like to be contacted?",
     ("Email", "Home phone", "Mobile phone")
