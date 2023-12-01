@@ -32,10 +32,18 @@ if uploaded_file is not None:
     # Can be used wherever a "file-like" object is accepted:
     dataframe = pd.read_csv(uploaded_file)
     st.write(dataframe)
+
+static_folder_path = "test_streamlit"
+# Get the image file path within the static folder
+image_filename = "austin1__tile_0_0.png"
+image_path = f"{static_folder_path}/{image_filename}"
+
+# Read the image using PIL (Python Imaging Library)
+image = Image.open(image_path)
+
+# Display the image in your Streamlit app
+st.image(image, caption="Example Image", use_column_width=True)
     
-    
-img='/test_streamlit/austin1__tile_0_0.png'   
-st.image(img, caption='Sunrise by the mountains')    
     
     
     
